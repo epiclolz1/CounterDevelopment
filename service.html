@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* 
+        ================================================================
+        EASY EDIT SECTION: Change your website's colors here
+        ================================================================
+        */
+        :root {
+            --bg-color: #1a1d1a;            /* Dark background of the page */
+            --container-bg: #252a25;        /* Background of the main content box */
+            --button-bg: #383f38;           /* Background of navigation buttons */
+            --text-color: #e0e6e0;          /* Main text color */
+            --glow-color: rgba(140, 190, 140, 0.25); /* Color of the subtle outer glow */
+            --border-color: #3f4a3f;        /* Border color for the content box */
+            --font-family: 'Poppins', sans-serif; /* Website font */
+        }
+
+        /* 
+        ================================================================
+        GENERAL STYLES: You probably don't need to edit below this
+        ================================================================
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .website-wrapper {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* --- Navigation Bar --- */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+            gap: 15px;
+        }
+
+        .nav-button {
+            background-color: var(--button-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 50px; /* Creates the pill shape */
+            font-weight: 600;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #4a524a;
+            transform: translateY(-2px);
+        }
+
+        /* --- Main Content Box --- */
+        .content-box {
+            background-color: var(--container-bg);
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 0 40px var(--glow-color); /* The subtle glow effect */
+        }
+
+        .content-box h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto; /* Keeps the paragraph centered */
+        }
+        
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .content-box {
+                padding: 30px 20px;
+            }
+            .content-box h1 {
+                font-size: 2.5rem;
+            }
+            .content-box p {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="website-wrapper">
+        <!-- 
+            EDIT YOUR NAVIGATION LINKS HERE
+            - Change the href="#" to your page link (e.g., "about.html")
+            - Change the text inside the <a> tag to the page name
+        -->
+        <nav>
+            <a href="#" class="nav-button">Home</a>
+            <a href="#" class="nav-button">Privacy Policy</a>
+            <a href="#" class="nav-button">Services</a>
+        </nav>
+
+        <!-- 
+            EDIT YOUR PAGE CONTENT HERE
+        -->
+        <main class="content-box">
+            <h1>Home</h1>
+            <p>
+                Welcome to our website. Create an account now by navigating to "Services" OR if you are worried about privacy risks, or want to know what we do with your data, navigate to "Privacy Policy".
+            </p>
+        </main>
+    </div>
+
+</body>
+</html>
